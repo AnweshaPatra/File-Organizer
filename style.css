@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --green: #a8df65;
+  --stone: #D0D0D2;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading {
+  font-size: 1rem;
+  position: fixed;
+  background: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--green);
+  padding: 5px 15px;
+  border-radius: 10px 10px 0 0;
+  z-index: 1;
+  transition: 2s;
+}
+
+header {
+  background: var(--green);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+}
+h1 div {
+  font-size: 0.5em;
+}
+
+h2 {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.root-path-wrap {
+  margin: 1rem auto;
+  text-align: center;
+}
+.root-path-wrap input {
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+
+.dbx-list {
+  margin: auto;
+  padding: 10px;
+  background: var(--green);
+  color: white;
+  max-width: 700px;
+}
+.dbx-list-item {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+.dbx-list-item:not(:last-child) {
+  border-bottom: 1px solid white;
+}
+
+.dbx-thumb {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.dbx-btn {
+  background: white;
+  border: 2px solid var(--green);
+  border-radius: 5px;
+  color: var(--green);
+  cursor: pointer;
+  display: block;
+  font-size: 1.5rem;
+  margin: 5px auto;
+}
+.dbx-btn:hover:not(:disabled) {
+  background: var(--green);
+  color: white;
+}
+.dbx-btn:disabled {
+  color: gray;
+  border-color: gray;
+  cursor: not-allowed;
+}
+
+.folder {
+  font-weight: bold;
+}
+
+.date-range {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+footer {
+  margin: 15px 0;
+}
+
+.log {
+  margin: 0 10px;
+}
+.log-item {
+  margin: 1rem 0;
+}
+.log-item--success {
+  color: forestgreen;
+}
+.log-item--failure {
+  color: darkred;
+}
+.log-item--other {
+  color: burlywood;
+}

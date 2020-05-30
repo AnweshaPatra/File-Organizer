@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Files Organizer</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        File Organizer
+      </h1>
+      <form class="root-path-wrap js-root-path__form">
+        <h2><label for="root-path"> Folder Path</label></h2>
+        <input
+          type="text"
+          name="root-path"
+          id="root-path"
+          class="js-root-path__input"
+          value="/">
+        <button aria-label="Load path" class="dbx-btn" type="submit">
+          <i class="las la-arrow-right"></i>
+        </button>
+      </form>
+    </header>
+    <main>
+      <br>
+      <button type="button" class="dbx-btn js-organize-btn">Organize</button>
+      <br>
+      <ul class="dbx-list js-file-list">Loading...</ul>
+      <br>
+    </main>
+    <div class="loading js-loading">Loading...</div>
+    <script src="index.pack.js"></script>
+  </body>
+</html>
